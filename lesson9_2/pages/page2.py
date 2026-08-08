@@ -8,7 +8,7 @@ if st.button("全リセット"):
         st.session_state.grade=""
         st.session_state.hobby=[]
         st.session_state.age=""
-        st.write("すべてのデータをリセットしました")
+        st.success("すべてのデータをリセットしました")
     else:
         st.error("リセットするデータはありません")
 if st.button("名前リセット") and st.session_state.user_name != "":
