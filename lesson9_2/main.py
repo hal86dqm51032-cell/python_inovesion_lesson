@@ -7,4 +7,4 @@ import streamlit as st
 #     if not name==None:
 #         st.session_state.name=name+"さん"
 # st.write(f"記憶している名前:{st.session_state.name}")
-st.title("ただ挨拶するだけのアプリ(?)")
+st.title("挨拶アプリ")
