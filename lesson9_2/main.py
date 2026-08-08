@@ -26,4 +26,4 @@ hobby=st.multiselect("趣味を選択してください",["読書","スポーツ
 if st.button("趣味を保存"):
     st.session_state.hobby=hobby
     st.success("趣味を保存しました")
-st.write(f"現在保存されている学年:{st.session_state.hobby}")
+st.write(f"現在保存されている趣味:{st.session_state.hobby}")
