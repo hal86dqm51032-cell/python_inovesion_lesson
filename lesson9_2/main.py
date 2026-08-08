@@ -8,7 +8,7 @@ if "grade" not in st.session_state:
     st.session_state.grade=""
 
 if "hobby" not in st.session_state:
-    st.session_state.hobby=""
+    st.session_state.hobby=[]
 
 name=st.text_input("あなたの名前を入力してください")
 if st.button("名前を保存"):
