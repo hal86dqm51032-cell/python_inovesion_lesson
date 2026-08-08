@@ -3,10 +3,11 @@ import streamlit as st
 st.title("データリセット")
 st.write("下のボタンを押すと、入力したデータをすべてリセットします")
 if st.button("リセット"):
-    if st.session_state.user_name != "" or st.session_state.grade != "" or st.session_state.hobby != []:
+    if st.session_state.user_name != "" or st.session_state.grade != "" or st.session_state.hobby != [] or st.session_state.age != "":
         st.session_state.user_name=""
         st.session_state.grade=""
         st.session_state.hobby=[]
+        st.session_state.age=""
     else:
         st.error("リセットするデータはありません")
 else:

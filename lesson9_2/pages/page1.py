@@ -18,6 +18,12 @@ else:
     st.error("趣味が1つも選択されていません")
     st.write("メインページで趣味を１つ以上選択してください")
 
-if "user_name" in st.session_state and st.session_state.user_name and "grade" in st.session_state and st.session_state.grade and "hobby" in st.session_state and st.session_state.hobby:
+if "age" in st.session_state and st.session_state.age:
+    st.success(f"あなたは{st.session_state.age}歳なんですね")
+else:
+    st.error("年齢がスライダーで選択されていません")
+    st.write("メインページの年齢のスライダーで年齢を選択してください")
+
+if "user_name" in st.session_state and st.session_state.user_name and "grade" in st.session_state and st.session_state.grade and "hobby" in st.session_state and st.session_state.hobby and "age" in st.session_state and st.session_state.age:
     st.balloons()
     # もしすべてのsession_stateが入力/選択されたら風船を飛ばす

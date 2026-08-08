@@ -10,6 +10,9 @@ if "grade" not in st.session_state:
 if "hobby" not in st.session_state:
     st.session_state.hobby=[]
 
+if "age" not in st.session_state:
+    st.session_state.age=""
+
 name=st.text_input("あなたの名前を入力してください")
 if st.button("名前を保存"):
     st.session_state.user_name = name
@@ -27,3 +30,9 @@ if st.button("趣味を保存"):
     st.session_state.hobby=hobby
     st.success("趣味を保存しました")
 st.write(f"現在保存されている趣味:{st.session_state.hobby}")
+
+age=st.slider("年齢をスライダーで選択してください",1,100)
+if st.button("年齢を保存"):
+    st.session_state.age=age
+    st.success("年齢を保存しました")
+st.write(f"現在保存されている年齢:{age}")
